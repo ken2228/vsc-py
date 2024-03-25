@@ -1,5 +1,5 @@
-#from replit import clear
-from art import logo
+from os import system
+from art_auction import logo
 #HINT: You can call clear() to clear the output in the console.
 bidding_dictionary ={}
 other_bidders = "yes"
@@ -18,9 +18,11 @@ def add_dictonary(persons_name, persons_bid):
 print(logo)
 print("\n\nWelcome to the secret auction program.\n")
 
-while other_bidders == "yes":
-  ask_name_bid()
-  other_bidders = input("Are there any other bidders? Type 'yes' or 'no'. ")
+while other_bidders == "yes":                                                 # >-|
+  ask_name_bid()                                                              #   |
+  other_bidders = input("Are there any other bidders? Type 'yes' or 'no'. ")  # <-|
+  system("cls")
+
   
 winner = ""
 winning_bid = 0
